@@ -1,0 +1,63 @@
+body{
+	background-color: #BAC3EB;
+	color: #D1969A;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.banner{
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	margin-left: 2.5%;
+}
+
+.banner video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.banner .content{
+	position: relative;
+	z-index: 1;
+}
+
+.banner .content h1{
+	padding: 0;
+	margin-right: 0;
+	font-size: 13.5em;
+	text-align: left;
+}
+
+.secondContainer{
+	position:absolute;
+	height: 1500px;
+	text-align: center;
+	font-size: 50px;
+	margin-left: 2.5%;
+	color: #7D98A1;
+}
+
+.thirdContainer{
+
+}
+
+
+
+.fullscreen-bg__video {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+}
