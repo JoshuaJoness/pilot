@@ -122,12 +122,12 @@ body{
   }
 }
 
-
 .cardOne{
 	height: 300px;
 	width: 200px;
 	background-color: #D1969A;
 	border-radius: 6px;
+	box-shadow: 0 15px 31px 0 rgba(0,7,92,.38);
 }
 
 .cardTwo{
@@ -135,6 +135,7 @@ body{
 	width: 200px;
 	background-color: #90A5D6;
 	border-radius: 6px;
+	box-shadow: 0 15px 31px 0 rgba(0,7,92,.38);
 }
 
 .cardThree{
@@ -142,6 +143,7 @@ body{
 	width: 200px;
 	background-color: #D1969A;
 	border-radius: 6px;
+	box-shadow: 0 15px 31px 0 rgba(0,7,92,.38);
 }
 .cardContainer :hover{
 	opacity: 0.8;
