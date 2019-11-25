@@ -1,5 +1,5 @@
 body{
-	background-color: #BAC3EB;
+	background-color: white;
 	color: #D1969A;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
@@ -26,9 +26,44 @@ body{
 	pointer-events: none;
 }
 
+@media screen and (max-width: 992px) {
+  .banner video  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner video  {
+    width: 100vw;
+  }
+}
+
 .banner .content{
 	position: relative;
 	z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .title  {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titleMobile  {
+    visibility: visible;
+		position: fixed;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .titleMobile  {
+    visibility:hidden;
+  }
+}
+
+.titleMobile  {
+	visibility:hidden;
 }
 
 .banner .content h1{
@@ -45,8 +80,16 @@ body{
 	font-size: 50px;
 	margin-left: 2.5%;
 	color: #7D98A1;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
 }
 
+.secondContainer h1{
+	font-size: 40px;
+}
+.description{
+	line-height: 2;
+}
 .thirdContainer{
 
 }
@@ -60,4 +103,65 @@ body{
     width: 100%;
 
 
+}
+.cardContainer{
+	display: grid;
+	grid-template-columns: 33.9% 33.9% 33.9%;
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer  {
+    display: block;
+		padding-left: 10%;
+		padding-bottom: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body{
+		width: 100vw;
+  }
+}
+
+
+.cardOne{
+	height: 300px;
+	width: 200px;
+	background-color: #D1969A;
+	border-radius: 6px;
+}
+
+.cardTwo{
+	height: 300px;
+	width: 200px;
+	background-color: #90A5D6;
+	border-radius: 6px;
+}
+
+.cardThree{
+	height: 300px;
+	width: 200px;
+	background-color: #D1969A;
+	border-radius: 6px;
+}
+.cardContainer :hover{
+	opacity: 0.8;
+}
+
+.cardOneText{
+	padding-top: 40%;
+}
+.cardTwoText{
+	padding-top: 40%;
+}
+.cardThreeText{
+	padding-top: 40%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 40px;
 }

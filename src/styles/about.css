@@ -1,0 +1,25 @@
+.aboutContainer{
+	display: grid;
+	grid-auto-rows: 20%  10% 70%;
+	margin-bottom: 10%;
+}
+
+.titleContainer{
+	padding-bottom: 0;
+}
+
+.aboutDescription{
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+.descriptionContainer{
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.aboutImage{
+	width: 100%;
+}
