@@ -40,7 +40,7 @@ class CheckoutForm extends Component {
 			},
 			button:{
 				width: '150px',
-				height: '50px',
+				height: '80px',
 				borderWidth: '0',
 				 outline: 'none',
 				 borderRadius: '2px',
@@ -49,7 +49,8 @@ class CheckoutForm extends Component {
 				 color: '#D1969A',
 				 fontFamily: 'Roboto',
 				 fontSize: '1.7em',
-				 marginLeft: '15%'
+				 marginLeft: '15%',
+				 overflow: 'hidden'
 			},
 			innerForm:{
 				border: '1px solid grey',
