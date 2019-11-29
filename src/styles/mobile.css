@@ -1,0 +1,115 @@
+body{
+	background-color: #54607D;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+
+}
+.pilotTitle{
+	margin-bottom: ;
+	font-family: 'Pacifico', cursive;
+	font-size: 70px;
+	font-weight: 100;
+}
+.pilotButton{
+	margin-top: 50px;
+	width: 150px;
+	height: 50px;
+	border-width: 0;
+ outline: none;
+ border-radius: 2px;
+ box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+ background-color: grey;
+ color: #ecf0f1;
+
+ font-family: 'Roboto';
+ font-size: 1.7em;
+}
+.pilotContainer{
+	display: grid;
+	grid-auto-rows: 50% 50%;
+	margin-top: 30vh;
+}
+.pilotContainer a{
+	text-decoration: none;
+	color: white;
+}
+button:hover{
+	opacity: 0.5;
+}
+.containerOne{
+	height: 100vh;
+}
+.containerTwo{
+	height: 100vh;
+	background-color: white;
+}
+.containerTwoTitle{
+	font-family: 'Pacifico', cursive;
+	font-size: 60px;
+	font-weight: 100;
+	margin-top: 10%;
+	margin-bottom: 0;
+}
+.containerTwoDescriptionContainer{
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+}
+.containerTwoDescription{
+	color:black;
+	line-height: 2;
+	font-size: 18px;
+}
+.containerThree{
+	height:150vh;
+	background-color: #DCD9DC;
+}
+.containerThreeTitle{
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 70px;
+	font-weight: 100;
+}
+.containerThreeForm{
+	background-color: white;
+	width: 80vw;
+	padding-top: 5%;
+	padding-bottom: 10%;
+	margin-top: 5%;
+	border-radius: 6px;
+}
+.checkboxLabel{
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+}
+.dateAndTime{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#outlined-basic{
+	width: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .containerTwo {
+    height: 80vh;
+		padding-top: 2%;
+  }
+	.containerThreeForm{
+		width: 500px;
+	}
+}
+.containerFour{
+	height: 100vh;
+}
+.containerFourTitle{
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 70px;
+	font-weight: 100;
+}

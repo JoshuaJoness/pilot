@@ -1,11 +1,10 @@
 body{
-	background-color: white;
+	background-color: #4C5876;
 	color: #D1969A;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 }
-
 .banner{
 	width:100%;
 	height:100vh;
@@ -15,7 +14,6 @@ body{
 	align-items: left;
 	margin-left: 2.5%;
 }
-
 .banner video{
 	position: absolute;
 	top: 0;
@@ -25,53 +23,43 @@ body{
 	height: 100%;
 	pointer-events: none;
 }
-
 @media screen and (max-width: 992px) {
   .banner video  {
     width: 100%;
   }
+	.titleMobile  {
+    visibility:hidden;
+  }
 }
-
 @media screen and (max-width: 600px) {
   .banner video  {
     width: 100vw;
   }
+	.title  {
+    visibility: hidden;
+  }
+	.titleMobile  {
+		visibility: visible;
+		position: fixed;
+	}
+	.description{
+		font-size: 10px;
+	}
 }
-
 .banner .content{
 	position: relative;
 	z-index: 1;
 }
-
-@media screen and (max-width: 600px) {
-  .title  {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .titleMobile  {
-    visibility: visible;
-		position: fixed;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .titleMobile  {
-    visibility:hidden;
-  }
-}
-
 .titleMobile  {
 	visibility:hidden;
 }
 
-.banner .content h1{
+/* .banner .content h1{
 	padding: 0;
 	margin-right: 0;
 	font-size: 13.5em;
 	text-align: left;
-}
+} */
 
 .secondContainer{
 	position:absolute;
@@ -84,15 +72,16 @@ body{
 	grid-template-columns: 20% 60% 20%;
 }
 
-.secondContainer h1{
+/* .secondContainer h1{
 	font-size: 40px;
-}
+} */
 .description{
 	line-height: 2;
 }
 .thirdContainer{
 
 }
+
 
 
 
@@ -159,11 +148,11 @@ body{
 	padding-top: 40%;
 }
 
-a {
+/* a {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
 	font-size: 40px;
 	text-align: center;
 	padding-top: 40px;
-}
+} */

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {CardElement, injectStripe} from 'react-stripe-elements';
 import axios from 'axios'
 import qs from 'qs'
+import '../styles/checkoutForm.css'
 
 const successPayment = data => {
   alert('Payment Successful');
@@ -20,7 +21,7 @@ class CheckoutForm extends Component {
   			data:
     		token,
 				appointment
-			}).then(res=>{console.log(res.data);}).catch(err=>{})
+			}).then(res=>{console.log(res.data)}).catch(err=>{})
 	})
 }
   render() {
@@ -36,16 +37,42 @@ class CheckoutForm extends Component {
 			},
 			cardElement: {
 				border: '1px solid black'
+			},
+			button:{
+				width: '150px',
+				height: '50px',
+				borderWidth: '0',
+				 outline: 'none',
+				 borderRadius: '2px',
+
+				 backgroundColor: '#DCD9DC',
+				 color: '#D1969A',
+				 fontFamily: 'Roboto',
+				 fontSize: '1.7em',
+				 marginLeft: '15%'
+			},
+			innerForm:{
+				border: '1px solid grey',
+				borderRadius: '6px',
+				width: '100%',
+				padding: '10%'
+			},
+			outerForm:{
+				marginRight: '15%',
 			}
 		}
     return (
-			<center>
-      <form onSubmit={this.submit}>
-
-        <CardElement style={styles.cardElement}/>
-        <button>Purchase</button>
-      </form>
-			</center>
+			<>
+	      <form onSubmit={this.submit} style={styles.outerForm}>
+					<div style={styles.innerForm}>
+						<div></div>
+	        	<CardElement style={styles.cardElement}/>
+						<div></div>
+					</div>
+					<br/><br/>
+	        <button style={styles.button} className='stripeButton'>Book Now</button>
+	      </form>
+			</>
     )
   }
 }
